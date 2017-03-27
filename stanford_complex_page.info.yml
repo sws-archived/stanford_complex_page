@@ -1,0 +1,27 @@
+name: 'Stanford Complex Page'
+type: module
+description: 'Provides Complex Page content type and related configuration. A long form story telling page.'
+core: 8.x
+package: Stanford
+version: 8.x-1.0-dev
+dependencies:
+  - allowed_formats
+  - ds
+  - entity_reference_revisions
+  - field
+  - field_formatter_class
+  - field_group
+  - file
+  - filefield_paths
+  - image
+  - layout_plugin
+  - menu_ui
+  - node
+  - panelizer
+  - paragraphs
+  - path
+  - rdf
+  - scheduler
+  - stanford_paragraph_types
+  - text
+  - user

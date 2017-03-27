@@ -1,0 +1,14 @@
+uuid: c3f72122-6aba-41eb-920a-4e807f72ad14
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.complex_page
+  module:
+    - node
+id: node.complex_page
+targetEntityType: node
+bundle: complex_page
+types:
+  - ''
+fieldMappings: {  }

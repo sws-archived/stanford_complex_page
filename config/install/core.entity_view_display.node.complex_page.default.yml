@@ -1,0 +1,150 @@
+uuid: d9d0cfa9-a82e-4368-9926-334916147804
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.complex_page.field_component
+    - field.field.node.complex_page.panelizer
+    - node.type.complex_page
+  module:
+    - ds
+    - entity_reference_revisions
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          840cbb2d-82f5-4710-ba5e-3bb2c9e61406:
+            id: 'entity_field:node:uid'
+            label: 'Authored by'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: author
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 0
+            uuid: 840cbb2d-82f5-4710-ba5e-3bb2c9e61406
+          38d34fad-30f8-4aaf-a7c0-9ef63ce8671b:
+            id: 'entity_field:node:created'
+            label: 'Authored on'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: timestamp
+              settings:
+                date_format: medium
+                custom_date_format: ''
+                timezone: ''
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 0
+            uuid: 38d34fad-30f8-4aaf-a7c0-9ef63ce8671b
+          be0bbec9-84d9-4727-be71-029fb206230a:
+            id: 'entity_field:node:field_component'
+            label: Component
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: entity_reference_revisions_entity_view
+              settings:
+                view_mode: default
+                link: ''
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 101
+            uuid: be0bbec9-84d9-4727-be71-029fb206230a
+        id: panels_variant
+        label: Default
+        uuid: fd258ff3-66b3-4480-8d59-34a9d5ae3355
+        weight: 0
+        layout: onecol
+        layout_settings: {  }
+        page_title: '[node:title]'
+        storage_type: ''
+        storage_id: ''
+        builder: ipe
+        pattern: panelizer
+      complex_default:
+        blocks: {  }
+        id: panels_variant
+        uuid: 9a06431e-2aad-40ae-9d94-dc2cbf2bfbaf
+        label: 'Complex Default'
+        weight: 0
+        layout: basic
+        layout_settings: {  }
+        page_title: ''
+        storage_type: panelizer_default
+        storage_id: 'node:complex_page:default:complex_default'
+        pattern: panelizer
+        builder: ipe
+        static_context: {  }
+  ds:
+    layout:
+      id: basic
+      path: modules/stanford/stanford_layouts/plugins/layouts/one-column/basic
+      library: layout_plugin/basic
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - node_title
+        - field_component
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+id: node.complex_page.default
+targetEntityType: node
+bundle: complex_page
+mode: default
+content:
+  field_component:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  links:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  panelizer:
+    type: panelizer
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    label: hidden
+    type: string
+    weight: 119
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }
