@@ -7,7 +7,6 @@ dependencies:
     - node.type.complex_page
     - paragraphs.paragraphs_type.stanford_buttons
     - paragraphs.paragraphs_type.stanford_callout_text
-    - paragraphs.paragraphs_type.stanford_complex_page_card
     - paragraphs.paragraphs_type.stanford_hero
     - paragraphs.paragraphs_type.stanford_wysiwyg
   module:
@@ -30,7 +29,6 @@ settings:
       stanford_callout_text: stanford_callout_text
       stanford_hero: stanford_hero
       stanford_wysiwyg: stanford_wysiwyg
-      stanford_complex_page_card: stanford_complex_page_card
     target_bundles_drag_drop:
       stanford_buttons:
         enabled: true
@@ -42,9 +40,6 @@ settings:
         enabled: true
         weight: 7
       stanford_wysiwyg:
-        enabled: true
-        weight: 8
-      stanford_complex_page_card:
         enabled: true
         weight: 8
 field_type: entity_reference_revisions
