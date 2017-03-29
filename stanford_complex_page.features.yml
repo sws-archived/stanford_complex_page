@@ -1,13 +1,1 @@
-excluded:
-  - core.entity_form_display.paragraph.stanford_complex_page_card.default
-  - core.entity_view_display.node.complex_page.teaser
-  - core.entity_view_display.paragraph.stanford_complex_page_card.default
-  - field.field.node.complex_page.panelizer
-  - field.field.paragraph.stanford_complex_page_card.field_sp_card_image
-  - field.field.paragraph.stanford_complex_page_card.field_sp_card_text
-  - field.field.paragraph.stanford_complex_page_card.field_sp_card_title
-  - field.storage.paragraph.field_sp_card_image
-  - field.storage.paragraph.field_sp_card_text
-  - field.storage.paragraph.field_sp_card_title
-  - paragraphs.paragraphs_type.stanford_complex_page_card
 required: true

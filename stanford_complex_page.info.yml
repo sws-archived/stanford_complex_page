@@ -17,7 +17,6 @@ dependencies:
   - layout_plugin
   - menu_ui
   - node
-  - panelizer
   - paragraphs
   - path
   - rdf
