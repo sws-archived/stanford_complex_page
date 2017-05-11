@@ -5,6 +5,7 @@ core: 8.x
 package: Stanford
 version: 8.x-1.0-dev
 dependencies:
+  - drupal:system (>= 8.3.x)
   - allowed_formats
   - ds
   - entity_reference_revisions
@@ -14,7 +15,7 @@ dependencies:
   - file
   - filefield_paths
   - image
-  - layout_plugin
+  - layout_discovery
   - menu_ui
   - node
   - paragraphs
