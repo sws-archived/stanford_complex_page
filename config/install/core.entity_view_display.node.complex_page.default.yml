@@ -1,4 +1,3 @@
-uuid: d9d0cfa9-a82e-4368-9926-334916147804
 langcode: en
 status: true
 dependencies:
@@ -6,29 +5,9 @@ dependencies:
     - field.field.node.complex_page.field_component
     - node.type.complex_page
   module:
-    - ds
     - entity_reference_revisions
     - user
 third_party_settings:
-  ds:
-    layout:
-      id: basic
-      path: modules/stanford/stanford_layouts/plugins/layouts/one-column/basic
-      library: layout_plugin/basic
-      disable_css: false
-      entity_classes: all_classes
-      settings: {  }
-    regions:
-      content:
-        - node_title
-        - field_component
-        - links
-    fields:
-      node_title:
-        plugin_id: node_title
-        weight: 0
-        label: hidden
-        formatter: default
 id: node.complex_page.default
 targetEntityType: node
 bundle: complex_page
@@ -36,21 +15,12 @@ mode: default
 content:
   field_component:
     type: entity_reference_revisions_entity_view
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-  links:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-  title:
-    label: hidden
-    type: string
-    weight: 119
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-hidden: {  }
+    region: content
+hidden:
+  links: true
