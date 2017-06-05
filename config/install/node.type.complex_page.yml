@@ -26,4 +26,4 @@ description: 'A long form story telling page.'
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false
