@@ -7,7 +7,6 @@ dependencies:
   module:
     - entity_reference_revisions
     - user
-third_party_settings:
 id: node.complex_page.default
 targetEntityType: node
 bundle: complex_page

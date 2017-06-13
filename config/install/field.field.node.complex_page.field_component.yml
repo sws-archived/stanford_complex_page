@@ -4,10 +4,6 @@ dependencies:
   config:
     - field.storage.node.field_component
     - node.type.complex_page
-    - paragraphs.paragraphs_type.stanford_buttons
-    - paragraphs.paragraphs_type.stanford_callout_text
-    - paragraphs.paragraphs_type.stanford_hero
-    - paragraphs.paragraphs_type.stanford_wysiwyg
   module:
     - entity_reference_revisions
 id: node.complex_page.field_component
@@ -16,29 +12,13 @@ entity_type: node
 bundle: complex_page
 label: Component
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles:
-      stanford_buttons: stanford_buttons
-      stanford_callout_text: stanford_callout_text
-      stanford_hero: stanford_hero
-      stanford_wysiwyg: stanford_wysiwyg
-    target_bundles_drag_drop:
-      stanford_buttons:
-        enabled: true
-        weight: 5
-      stanford_callout_text:
-        enabled: true
-        weight: 6
-      stanford_hero:
-        enabled: true
-        weight: 7
-      stanford_wysiwyg:
-        enabled: true
-        weight: 8
+    target_bundles: null
+    target_bundles_drag_drop: { }
 field_type: entity_reference_revisions

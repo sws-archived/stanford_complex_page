@@ -6,15 +6,10 @@ package: Stanford
 version: 8.x-1.0-dev
 dependencies:
   - allowed_formats
-  - system (>= 8.3.x)
   - ds
   - entity_reference_revisions
   - field
   - field_formatter_class
-  - field_group
-  - file
-  - filefield_paths
-  - image
   - layout_discovery
   - menu_ui
   - node
@@ -22,6 +17,6 @@ dependencies:
   - path
   - rdf
   - scheduler
-  - stanford_paragraph_types
+  - 'system (>= 8.3.x)'
   - text
   - user
