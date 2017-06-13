@@ -12,13 +12,13 @@ entity_type: node
 bundle: complex_page
 label: Component
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: []
-    target_bundles_drag_drop: []
+    target_bundles: null
+    target_bundles_drag_drop: { }
 field_type: entity_reference_revisions

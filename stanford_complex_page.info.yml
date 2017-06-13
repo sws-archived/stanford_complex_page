@@ -6,7 +6,6 @@ package: Stanford
 version: 8.x-1.0-dev
 dependencies:
   - allowed_formats
-  - system (>= 8.3.x)
   - ds
   - entity_reference_revisions
   - field
@@ -18,5 +17,6 @@ dependencies:
   - path
   - rdf
   - scheduler
+  - 'system (>= 8.3.x)'
   - text
   - user
