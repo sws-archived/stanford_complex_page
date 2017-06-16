@@ -20,5 +20,5 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles: null
-    target_bundles_drag_drop: { }
+    target_bundles_drag_drop: {  }
 field_type: entity_reference_revisions
