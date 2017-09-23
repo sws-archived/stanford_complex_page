@@ -5,8 +5,22 @@ dependencies:
     - field.field.node.complex_page.field_component
     - node.type.complex_page
   module:
+    - ds
     - entity_reference_revisions
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_simple
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: only_content
+    regions:
+      content:
+        - field_component
 id: node.complex_page.default
 targetEntityType: node
 bundle: complex_page
