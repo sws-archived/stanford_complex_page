@@ -3,7 +3,7 @@ type: module
 description: 'Provides Complex Page content type and related configuration. A long form story telling page.'
 core: 8.x
 package: Stanford
-version: 8.x-1.0-alpha1
+version: 8.x-1.0-dev
 dependencies:
   - allowed_formats
   - ds
